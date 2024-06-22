@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+            padding-top: 50px; /* Adjust padding as needed */
+            font-family: Arial, sans-serif; /* Optional: Set font-family */
+        }
+        table {
+            width: "1585" /* Optional: Set width of the table */
+            border-collapse: collapse; /* Optional: Collapse table borders */
+        }
+        th, td {
+            border: 1px solid #ddd; /* Optional: Add borders to cells */
+            padding: 10px; /* Optional: Add padding inside cells */
+        }
+        .profile-container {
+            position: relative;
+            width: 100%;
+            height: 200px; /* Adjust the height as needed */
+        }
+        .rectangular-pic {
+            width: 1600px; /* Adjust the width as needed */
+            height: 400px; /* Adjust the height as needed */
+            position: absolute;
+            top: -180px; /* Adjust the vertical position as needed */
+            left: 0px; /* Adjust the horizontal position as needed */
+            z-index: -1; /* Position the rectangular image behind the profile picture */
+        }
+        .profile-pic {
+            width: 120px; /* Adjust the width as needed */
+            height: 120px; /* Adjust the height as needed */
+            border-radius: 50%; /* Makes the image circular */
+            border: 2px solid #0002; /* Adjust the border size and color */
+            position: absolute;
+            top: 120px; /* Adjust the vertical position as needed */
+            left: 20px; /* Adjust the horizontal position as needed */
+            z-index: 1; /* Position the profile picture above the rectangular image */
+        }
+        .horizontal-line {
+            position: absolute;
+            top: 300px; /* Vertically center the line */
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #0002; /* Adjust the line thickness and color */
+            z-index: -2; /* Position the line behind all images */
+        }
+
+        .spacer {
+            height: 500px; /* Adjust the height to create more or less space */
+            background-color: #f1f1f1; /* Set the background color */
+        }
+
+        .nav {
+            display: flex;
+            left: 150px;
+            padding: 10px;
+        }
+        .nav a {
+            margin-left: 20px;
+            padding: 15px 20px;
+            top: 200px;
+            left: 150px;
+            text-decoration: none;
+            color: #333;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+        .nav a:hover {
+            background-color: #0000;
+        }
+    </style>
+</head>
+
+<body>
+    <table width="1585" cellspacing="10" cellpadding="5" border="0">
+        <tr>
+            <td width="10%" style="background-color: #dddd; padding: 1px; border: 1px solid #0000; border-radius: 1px;">
+                <div class="profile-container">
+                <div class="profile-container">
+                <hr class="horizontal-line">
+                <img src="christmas-food-nk0vmtou.jpg" alt="Background Picture" class="rectangular-pic">
+                <img src="SIBONGA_JOHN VINCENT_BSECE.jpg" alt="Profile Picture" class="profile-pic">
+                </div>
+            </td>
+            <td width="90%" style="background-color: #dddd; padding: 1px; border: 1px solid #0000; border-radius: 1px;">
+                <div class="nav">
+                <div class="spacer-vertical">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="about.html">About Us</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+<body>
+    <table width="1585" cellspacing="10" cellpadding="5" border="0">
+        <tr>
+            <td width="25%" style="background-color: #dddd; padding: 1px; border: 1px solid #0000; border-radius: 1px;">
+                <h2>Card Left</h2>
+                <p>This is the content of the left card.</p>
+            </td>
+            <td width="75%" style="background-color: #0000; padding: 1px; border: 1px solid #0000; border-radius: 1px;">
+                <h2>Card Right</h2>
+                <p>This is the content of the right card.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
